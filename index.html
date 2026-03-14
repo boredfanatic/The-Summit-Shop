@@ -1,153 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fix-It Forward Shop</title>
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fix-It Forward Shop</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header class="site-header">
-        <a href="#" class="logo" aria-label="Fix It Forward Home">
-            Fix-It <span>Forward</span>
-        </a>
-        <nav class="nav" aria-label="Primary">
-            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
-                ☰
-            </button>
-            <ul id="nav-menu" class="nav__list">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#catalog">Catalogue</a></li>
-                <li><a href="#cart-panel">Cart</a></li>
-                <li><a href="#footer">Help</a></li>
-            </ul>
-        </nav>
-        <button class="header-cart" data-open-cart="true">
-            Cart
-            <span class="header-cart__count" aria-live="polite">0</span>
-        </button>
-    </header>
 
-    <main>
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-            <div class="hero__content">
-                <h1 id="hero-title">Broken, But Beautiful Store</h1>
-                <p>
-                    A deliberately imperfect e-commerce experience. Your mission is to make it
-                    production-ready.
-                </p>
-                <button class="btn btn--primary" data-scroll-target="#catalog">
-                    Start Shopping
-                </button>
-            </div>
-            <div class="hero__highlight" aria-hidden="true">
-                <p>Today only: Shipping might or might not work.</p>
-            </div>
-        </section>
+<header class="site-header">
+<a href="#" class="logo">Fix-It <span>Forward</span></a>
 
-        <section id="catalog" class="catalog" aria-label="Product list">
-            <header class="catalog__header">
-                <h2>Featured Items</h2>
-                <div class="catalog__filters">
-                    <label>
-                        Sort by
-                        <select id="sort-select">
-                            <option value="recommended">Recommended</option>
-                            <option value="price-asc">Price: Low to High</option>
-                            <option value="price-desc">Price: High to Low</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span class="visually-hidden">Search products</span>
-                        <input
-                            id="search-input"
-                            type="search"
-                            placeholder="Search products"
-                            autocomplete="off"
-                        />
-                    </label>
-                </div>
-            </header>
+<nav class="nav">
+<ul class="nav__list">
+<li><a href="#hero">Home</a></li>
+<li><a href="#catalog">Catalogue</a></li>
+<li><a href="#cart-panel">Cart</a></li>
+<li><a href="#footer">Help</a></li>
+</ul>
+</nav>
 
-            <div class="catalog__grid" id="product-grid">
-                <!-- Products are rendered from JS. Intentionally left blank. -->
-            </div>
+<button class="header-cart">
+Cart <span class="header-cart__count">0</span>
+</button>
+</header>
 
-            <template id="product-card-template">
-                <article class="product" data-product-id="">
-                    <button class="product__favorite" aria-pressed="false" aria-label="Save product">
-                        ☆
-                    </button>
-                    <div class="product__image-wrapper">
-                        <img class="product__image" alt="" loading="lazy" />
-                    </div>
-                    <div class="product__body">
-                        <h3 class="product__title"></h3>
-                        <p class="product__description"></p>
-                        <div class="product__pricing">
-                            <span class="product__price"></span>
-                            <span class="product__price--compare"></span>
-                        </div>
-                        <div class="product__stock" aria-live="polite"></div>
-                        <div class="product__actions">
-                            <label class="product__qty-label">
-                                Qty
-                                <input
-                                    class="product__qty-input"
-                                    type="number"
-                                    min="1"
-                                    max="9"
-                                    step="1"
-                                    value="1"
-                                />
-                            </label>
-                            <button class="btn btn--secondary product__add">Add to Cart</button>
-                        </div>
-                    </div>
-                </article>
-            </template>
-        </section>
+<main>
 
-        <aside id="cart-panel" class="cart" aria-label="Shopping cart" aria-live="polite">
-            <header class="cart__header">
-                <h2>Cart</h2>
-                <button class="cart__close" data-close-cart="true" aria-label="Close cart">
-                    ×
-                </button>
-            </header>
-            <div class="cart__body">
-                <ul class="cart__items" id="cart-items">
-                    <!-- Populated by JS -->
-                </ul>
-                <p class="cart__empty" id="cart-empty-msg">Your cart is currently empty.</p>
-            </div>
-            <footer class="cart__footer">
-                <dl class="cart__summary">
-                    <div>
-                        <dt>Subtotal</dt>
-                        <dd id="cart-subtotal">$0.00</dd>
-                    </div>
-                    <div>
-                        <dt>Estimated Tax</dt>
-                        <dd id="cart-tax">$0.00</dd>
-                    </div>
-                    <div>
-                        <dt>Total</dt>
-                        <dd id="cart-total">$0.00</dd>
-                    </div>
-                </dl>
-                <button class="btn btn--primary btn--full" id="checkout-btn" disabled>
-                    Proceed to Checkout
-                </button>
-                <p class="cart__status" id="checkout-status" aria-live="polite"></p>
-            </footer>
-        </aside>
-    </main>
+<section id="hero" class="hero">
+<div class="hero__content">
+<h1>Broken, But Beautiful Store</h1>
+<p>A deliberately imperfect e-commerce experience.</p>
+<a href="#catalog" class="btn btn--primary">Start Shopping</a>
+</div>
+</section>
 
-    <footer id="footer" class="site-footer">
-        <p>© <span id="footer-year">2023</span> Fix-It Forward. All rights maybe reserved.</p>
-        <p class="site-footer__note">This is a demo store. Nothing you order will actually ship.</p>
-    </footer>
+<!-- FEATURED HOME SECTION -->
+<section id="featured-section" class="catalog">
+
+<h2 class="featured-title">Featured Items</h2>
+
+<div id="featured-grid" class="catalog__grid"></div>
+
+</section>
+
+<!-- CATALOGUE SECTION -->
+<section id="catalog" class="catalog">
+
+<header class="catalog__header">
+
+<h2>Catalogue</h2>
+
+<div class="catalog__filters">
+
+<label>
+Sort by
+<select id="sort-select">
+<option value="recommended">Recommended</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+</select>
+</label>
+
+<label>
+<input id="search-input" type="search" placeholder="Search products">
+</label>
+
+</div>
+</header>
+
+<div id="product-grid" class="catalog__grid"></div>
+
+</section>
+
+<!-- PRODUCT TEMPLATE -->
+
+<template id="product-card-template">
+
+<article class="product">
+
+<div class="product__image-wrapper">
+<img class="product__image" alt="">
+</div>
+
+<div class="product__body">
+
+<h3 class="product__title"></h3>
+
+<p class="product__description"></p>
+
+<div class="product__pricing">
+<span class="product__price"></span>
+</div>
+
+<div class="product__stock"></div>
+
+</div>
+
+</article>
+
+</template>
+
+</main>
+
+<footer id="footer" class="site-footer">
+<p>© <span id="footer-year">2023</span> Fix-It Forward</p>
+</footer>
+
 <script src="app.js"></script>
+
 </body>
 </html>
