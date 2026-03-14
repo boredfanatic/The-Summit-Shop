@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Gadget Pro",
+    "description": "A useful gadget for every day.",
+    "price": 49.99,
+    "image": "https://via.placeholder.com/150",
+    "stock": 9
+  },
+  {
+    "id": 2,
+    "name": "Widget Max",
+    "description": "Top-end widget with extra features.",
+    "price": 79.99,
+    "image": "https://via.placeholder.com/150",
+    "stock": 5
+  }
+]
