@@ -1,18 +1,325 @@
 [
   {
     "id": 1,
-    "name": "Gadget Pro",
-    "description": "A useful gadget for every day.",
-    "price": 49.99,
-    "image": "https://via.placeholder.com/150",
-    "stock": 9
+    "name": "Plain Journal",
+    "description": "Simple lined journal for daily notes and sketches.",
+    "category": "Books",
+    "price": 5.99,
+    "image": "https://via.placeholder.com/150?text=Journal",
+    "stock": 50
   },
   {
     "id": 2,
-    "name": "Widget Max",
-    "description": "Top-end widget with extra features.",
+    "name": "Ominous Notebook",
+    "description": "A worn notebook with 'Death Note' faintly embossed on the cover. Comes with a small set of mysterious instructions inside. Appears harmless.",
+    "category": "Books",
+    "price": 599.99,
+    "priceText": "or your soul",
+    "image": "https://via.placeholder.com/150?text=Ominous+Notebook",
+    "stock": 3
+  },
+  {
+    "id": 3,
+    "name": "Leather-Bound Novel",
+    "description": "Classic mystery novel with high-quality binding. A perfect addition to any shelf.",
+    "category": "Books",
+    "price": 12.99,
+    "image": "https://via.placeholder.com/150?text=Novel",
+    "stock": 20
+  },
+  {
+    "id": 4,
+    "name": "Toy Robot",
+    "description": "A small, battery-powered robot with basic movement features.",
+    "category": "Toys",
+    "price": 39.99, 
+    "image": "https://via.placeholder.com/150?text=Robot",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "name": "Weathered Straw Hat",
+    "description": "A sun-bleached straw hat found in a shipwreck.",
+    "category": "Clothes",
+    "price": 124.99,
+    "priceText": "or the One Piece", 
+    "image": "https://via.placeholder.com/150?text=Straw+Hat",
+    "stock": 8
+  },
+  {
+    "id": 6,
+    "name": "Cotton Hoodie",
+    "description": "Soft hoodie available in multiple colors, perfect for casual wear.",
+    "category": "Clothes",
+    "price": 34.99,
+    "image": "https://via.placeholder.com/150?text=Hoodie",
+    "stock": 30
+  },
+  {
+    "id": 7,
+    "name": "Classic Mug Set",
+    "description": "Two ceramic mugs suitable for coffee, tea, or other beverages.",
+    "category": "Misc",
+    "price": 12.99,
+    "image": "https://via.placeholder.com/150?text=Mug+Set",
+    "stock": 40
+  },
+  {
+    "id": 8, 
+    "name": "Desk Lamp",
+    "description": "Adjustable LED desk lamp for study or work.",
+    "category": "Misc",
+    "price": 24.99,
+    "image": "https://via.placeholder.com/150?text=Desk+Lamp",
+    "stock": 35
+  },
+  {
+    "id": 9, 
+    "name": "Eggo Waffle Pack",
+    "description": "A box of waffles. Nothing unusual… unless you find yourself craving them at odd hours.",
+    "category": "Misc",
+    "price": 9.99,
+    "priceText": "or a fleeting memory",
+    "image": "https://via.placeholder.com/150?text=Eggo+Waffles",
+    "stock": 20
+  },
+  {
+    "id": 10,
+    "name": "Old Pocket Watch",
+    "description": "An antique pocket watch that occasionally stops for a few seconds before resuming normally.",
+    "category": "Misc",
+    "price": 64.99,
+    "priceText": "or a moment in time",
+    "image": "https://via.placeholder.com/150?text=Pocket+Watch",
+    "stock": 6
+   },
+   {
+    "id": 11,
+    "name": "Green Pipe Cap",
+    "description": "A simple green cap with a small pipe symbol embroidered on the front.",
+    "category": "Clothes",
+    "price": 19.99,
+    "image": "https://via.placeholder.com/150?text=Green+Cap",
+    "stock": 18
+   },
+   {
+    "id": 12,
+    "name": "Odd Playing Card",
+    "description": "A single joker card with a strangely wide smile printed on it.",
+    "category": "Misc",
+    "price": 7.99,
+    "priceText": "why so serious?",
+    "image": "https://via.placeholder.com/150?text=Joker+Card",
+    "stock": 14
+   },
+   {
+    "id": 13,
+    "name": "Blue Crystal Shard",
+    "description": "A glowing blue crystal fragment stored in a protective case.",
+    "category": "Misc",
     "price": 79.99,
-    "image": "https://via.placeholder.com/150",
+    "priceText": "handle with care",
+    "image": "https://via.placeholder.com/150?text=Blue+Crystal",
     "stock": 5
-  }
+   },
+   {
+    "id": 14,
+    "name": "Survey Cloak",
+    "description": "A sturdy green cloak with an embroidered winged insignia on the back.",
+    "category": "Clothes",
+    "price": 89.99,
+    "image": "https://via.placeholder.com/150?text=Cloak",
+    "stock": 9
+   },
+   {
+    "id": 15,
+    "name": "Small White Dog Plush",
+    "description": "A soft plush dog that seems to smile no matter which direction it's facing.",
+    "category": "Toys",
+    "price": 21.99,
+    "image": "https://via.placeholder.com/150?text=Dog+Plush",
+    "stock": 22
+   },
+   {
+    "id": 16,
+    "name": "Rusty Nail Bat",
+    "description": "A wooden baseball bat reinforced with several old nails.",
+    "category": "Misc",
+    "price": 44.99,
+    "image": "https://via.placeholder.com/150?text=Nail+Bat",
+    "stock": 6
+   },
+   {
+    "id": 17,
+    "name": "Golden Coin",
+    "description": "A bright gold coin stamped with a strange star emblem.",
+    "category": "Misc",
+    "price": 14999.99,
+    "priceText": "price can change with respect to the value of gold during purchase",
+    "image": "https://via.placeholder.com/150?text=Coin",
+    "stock": 13
+   },
+   {
+    "id": 18,
+    "name": "Sketch Pad",
+    "description": "A blank sketch pad suitable for drawing, doodling, or design work.",
+    "category": "Books",
+    "price": 8.99,
+    "image": "https://via.placeholder.com/150?text=Sketch+Pad",
+    "stock": 40
+   },
+   {
+    "id": 19,
+    "name": "Cookbook",
+    "description": "Collection of everyday recipes for quick and simple meals.",
+    "category": "Books",
+    "price": 14.99,
+    "image": "https://via.placeholder.com/150?text=Cookbook",
+    "stock": 25
+   },
+   {
+    "id": 20,
+    "name": "Children's Coloring Book",
+    "description": "A coloring book filled with animals, shapes, and playful scenes.",
+    "category": "Books",
+    "price": 6.49,
+    "image": "https://via.placeholder.com/150?text=Coloring+Book",
+    "stock": 35
+   },
+   {
+    "id": 21,
+    "name": "Red Notebook",
+    "description": "Minimalist notebook with plain red cover and thick pages.",
+    "category": "Books",
+    "price": 9.99,
+    "image": "https://via.placeholder.com/150?text=Notebook",
+    "stock": 28
+   },
+   {
+    "id": 22,
+    "name": "Wooden Puzzle Cube",
+    "description": "A small wooden cube puzzle designed to test patience and problem solving.",
+    "category": "Toys",
+    "price": 11.99,
+    "image": "https://via.placeholder.com/150?text=Puzzle+Cube",
+    "stock": 24
+   },
+   {
+    "id": 23,
+    "name": "Toy Dinosaur",
+    "description": "A small plastic dinosaur toy popular with younger collectors.",
+    "category": "Toys",
+    "price": 10.99,
+    "image": "https://via.placeholder.com/150?text=Dinosaur",
+    "stock": 26
+   },
+   {
+    "id": 24,
+    "name": "Red Toy Ball",
+    "description": "A small red toy ball with a white button in the center.",
+    "category": "Toys",
+    "price": 14.99,
+    "priceText": "handle responsibly",
+    "image": "https://via.placeholder.com/150?text=Red+Ball",
+    "stock": 12
+   },
+   {
+    "id": 25,
+    "name": "Plush Caterpillar",
+    "description": "A colorful plush caterpillar with multiple soft segments.",
+    "category": "Toys",
+    "price": 17.99,
+    "image": "https://via.placeholder.com/150?text=Plush+Caterpillar",
+    "stock": 19
+   },
+   {
+    "id": 26,
+    "name": "Striped Scarf",
+    "description": "Warm knit scarf suitable for cold weather.",
+    "category": "Clothes",
+    "price": 18.99,
+    "image": "https://via.placeholder.com/150?text=Scarf",
+    "stock": 21
+   },
+   {
+    "id": 27,
+    "name": "Dark Peaked Cap",
+    "description": "Classic wool cap with a short peak. Popular in older industrial cities.",
+    "category": "Clothes",
+    "price": 22.99,
+    "image": "https://via.placeholder.com/150?text=Peaked+Cap",
+    "stock": 16
+   },
+   {
+    "id": 28,
+    "name": "Lightweight Jacket",
+    "description": "Simple everyday jacket designed for mild weather.",
+    "category": "Clothes",
+    "price": 39.99,
+    "image": "https://via.placeholder.com/150?text=Jacket",
+    "stock": 20
+   },
+   {
+    "id": 29,
+    "name": "White Gloves",
+    "description": "A pair of clean white gloves made from soft cotton.",
+    "category": "Clothes",
+    "price": 12.49,
+    "image": "https://via.placeholder.com/150?text=Gloves",
+    "stock": 30
+   },
+   {
+    "id": 30,
+    "name": "Ceramic Tea Set",
+    "description": "Traditional ceramic tea set including a teapot and two cups.",
+    "category": "Misc",
+    "price": 27.99,
+    "image": "https://via.placeholder.com/150?text=Tea+Set",
+    "stock": 14
+   },
+   {
+    "id": 31,
+    "name": "Desk Globe",
+    "description": "A small rotating globe useful for decoration or quick geography reference.",
+    "category": "Misc",
+    "price": 23.99,
+    "image": "https://via.placeholder.com/150?text=Globe",
+    "stock": 18
+   },
+   {
+    "id": 32,
+    "name": "Strange Journal",
+    "description": "A journal with a hand print of 6 fingers on the cover surrounded by small markings.",
+    "category": "Books",
+    "price": 43.99,
+    "image": "https://via.placeholder.com/150?text=Strange+Journal",
+    "stock": 11
+   },
+   {
+    "id": 33,
+    "name": "Old Brass Key",
+    "description": "An old brass key with no known lock. Its origin is unclear.",
+    "category": "Misc",
+    "price": 16.99,
+    "image": "https://via.placeholder.com/150?text=Brass+Key",
+    "stock": 10
+   },
+   {
+    "id": 34,
+    "name": "Vintage Compass",
+    "description": "A brass compass that occasionally spins before pointing north again.",
+    "category": "Misc",
+    "price": 21.99,
+    "image": "https://via.placeholder.com/150?text=Compass",
+    "stock": 12
+   },
+   {
+    "id": 35,
+    "name": "Blue Hooded Coat",
+    "description": "Heavy blue coat with deep pockets and reinforced seams.",
+    "category": "Clothes",
+    "price": 44.99,
+    "image": "https://via.placeholder.com/150?text=Blue+Coat",
+    "stock": 15
+   }
 ]

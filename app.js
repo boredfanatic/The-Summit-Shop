@@ -14,7 +14,12 @@ fetch("products.json")
       clone.querySelector(".product").dataset.productId = product.id;
       clone.querySelector(".product__title").textContent = product.name;
       clone.querySelector(".product__description").textContent = product.description;
-      clone.querySelector(".product__price").textContent = `$${product.price.toFixed(2)}`;
+
+      const priceElement = clone.querySelector(".product__price");
+      priceElement.innerHTML = `$${product.price.toFixed(2)}${
+        product.priceText ? ` <span class="price-text">${product.priceText}</span>` : ""
+      }`;
+
       clone.querySelector(".product__image").src = product.image;
       clone.querySelector(".product__stock").textContent =
         product.stock > 0 ? `${product.stock} in stock` : "Out of stock";

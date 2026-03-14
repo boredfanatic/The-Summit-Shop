@@ -299,6 +299,12 @@ button {
     font-weight: 600;
 }
 
+.price-text {
+    color: #363636;
+    font-size: 0.8rem;
+    margin-left: 4px;
+}
+
 .product__price--compare {
     font-size: 0.75rem;
     color: var(--color-text-muted);
